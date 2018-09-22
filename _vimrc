@@ -8,12 +8,14 @@ filetype off
 set rtp+=$VIM/vimfiles/bundle/Vundle.vim
 "安装包的位置
 call vundle#begin('$VIM/vimfiles/Vundle')
+"个人主配置
+Plugin 'czlheiyu/vimrc'
 "Vundle主版
 Plugin 'gmarik/Vundle.vim'
 "一个主题
 Plugin 'molokai'
 "" "自动补完工具
-"" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 "语法核对工具
 Plugin 'scrooloose/syntastic'
 "PEP8规范核对工具
@@ -30,7 +32,7 @@ Plugin 'taglist.vim'
 "python折叠工具
 Plugin 'tmhedberg/SimpylFold'
 "状态栏工具
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'czlheiyu/powerline', {'rtp': 'powerline/bindings/vim/'}
 call vundle#end()
 filetype plugin indent on
 
